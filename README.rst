@@ -14,11 +14,13 @@ httpfs
    :target: https://dev.azure.com/moremoban/httpfs/_build/latest?definitionId=2&branchName=master
 
 
+It enables moban to use any files over http(s) as its template or data file:
+
 .. code-block:: bash
 
-$ moban -t 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/templates/_version.py.jj2'\
-  -c 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/config/data.yml'\
-  -o _version.py
+    $ moban -t 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/templates/_version.py.jj2'\
+      -c 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/config/data.yml'\
+      -o _version.py
 
 
 Installation
