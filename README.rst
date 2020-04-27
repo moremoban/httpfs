@@ -1,0 +1,33 @@
+================================================================================
+httpfs
+================================================================================
+
+.. image:: https://api.travis-ci.org/moremoban/httpfs.svg
+   :target: http://travis-ci.org/moremoban/httpfs
+
+.. image:: https://codecov.io/github/moremoban/httpfs/coverage.png
+   :target: https://codecov.io/github/moremoban/httpfs
+
+
+
+.. image:: https://dev.azure.com/moremoban/httpfs/_apis/build/status/moremoban.httpfs?branchName=master
+   :target: https://dev.azure.com/moremoban/httpfs/_build/latest?definitionId=2&branchName=master
+
+
+.. code-block:: bash
+
+$ moban -t 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/templates/_version.py.jj2'\
+  -c 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/config/data.yml'\
+  -o _version.py
+
+
+Installation
+================================================================================
+
+You can get it:
+
+.. code-block:: bash
+
+    $ git clone https://github.com/moremoban/httpfs.git
+    $ cd httpfs
+    $ python setup.py install

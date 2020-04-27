@@ -1,0 +1,19 @@
+name: "httpfs"
+organisation: "moremoban"
+author: "C.W."
+contact: "wangc_2011@hotmail.com"
+company: "moban dev team"
+version: "0.0.1"
+current_version: "0.0.1"
+release: "0.0.0"
+copyright_year: 2020
+license: mit
+dependencies:
+  - fs
+  - httpx
+entry_points:
+  fs.opener:
+    - "http = httpfs:HttpFsOpener"
+    - "https = httpfs:HttpFsOpener"
+description: "Read file over HTTP protocol via python file system 2 interface"
+lint_command: make install_test lint format git-diff-check
