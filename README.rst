@@ -7,8 +7,8 @@ httpfs
 
 .. image:: https://codecov.io/github/moremoban/httpfs/coverage.png
    :target: https://codecov.io/github/moremoban/httpfs
-
-
+.. image:: https://img.shields.io/github/stars/moremoban/httpfs.svg?style=social&maxAge=3600&label=Star
+    :target: https://github.com/moremoban/httpfs/stargazers
 
 .. image:: https://dev.azure.com/moremoban/httpfs/_apis/build/status/moremoban.httpfs?branchName=master
    :target: https://dev.azure.com/moremoban/httpfs/_build/latest?definitionId=2&branchName=master
