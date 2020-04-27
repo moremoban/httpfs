@@ -2,7 +2,7 @@ import httpx
 from fs.opener import Opener
 from fs.memoryfs import MemoryFS
 
-TEXT_FILE_TYPES = ['text/plain']
+TEXT_FILE_TYPES = ["text/plain"]
 
 
 class HttpFsOpener(Opener):
@@ -11,9 +11,9 @@ class HttpFsOpener(Opener):
     def open_fs(self, fs_url, parse_result, writeable, create, cwd):
         r = httpx.get(fs_url)
 
-        content_type, _ = r.headers['content-type'].split(';')
+        content_type, _ = r.headers["content-type"].split(";")
 
-        file_name = parse_result.resource.split('/')[-1]
+        file_name = parse_result.resource.split("/")[-1]
         mem_fs = MemoryFS()
         if content_type in TEXT_FILE_TYPES:
             mem_fs.writetext(file_name, r.text)
