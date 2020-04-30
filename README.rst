@@ -23,6 +23,18 @@ It enables moban to use any files over http(s) as its template or data file:
       -o _version.py
 
 
+Capability contraints
+================================================================================
+
+Only one http url can be used with `template_dir` inside a mobanfile. Simply
+HTTP interface do not allow directory list. Hence, no way to tell if a file
+falls in one url but not another.
+
+In an edge case, if github repo's public url is given for a moban project,
+this github repo shall not have sub repos. This library will fail to
+translate sub-repo as url.
+
+
 Installation
 ================================================================================
 
