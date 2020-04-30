@@ -38,7 +38,7 @@ class HttpFs(FS):
                 url = self.base_url + a_file
             else:
                 url = self.base_url + "/" + a_file
-                content = self.download_file(url)
+            content = self.download_file(url)
             return BytesIO(content)
         except NoContentFound:
             raise CreateFailed
