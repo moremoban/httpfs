@@ -10,11 +10,24 @@ httpfs
 .. image:: https://img.shields.io/github/stars/moremoban/httpfs.svg?style=social&maxAge=3600&label=Star
     :target: https://github.com/moremoban/httpfs/stargazers
 
-.. image:: https://dev.azure.com/moremoban/httpfs/_apis/build/status/moremoban.httpfs?branchName=master
-   :target: https://dev.azure.com/moremoban/httpfs/_build/latest?definitionId=2&branchName=master
 
+What can you do with it?
+================================================================================
 
-It enables moban to use any files over http(s) as its template or data file:
+.. code::
+
+   >>> import fs
+   >>> with fs.open_fs('https://www.google.com') as f:
+   ...     print(f.readbytes('index.html'))
+   b'<!doctype ....'
+
+Have fun!
+
+Why
+================================================================================
+
+Its creation was to enable `moban`_ to use any files over http(s) as its
+template or data file:
 
 .. code-block:: bash
 
@@ -23,12 +36,10 @@ It enables moban to use any files over http(s) as its template or data file:
       -o _version.py
 
 
+.. _moban: https://github.com/moremoban/moban
+
 Capability contraints
 ================================================================================
-
-Only one http url can be used with `template_dir` inside a mobanfile. Simply
-HTTP interface do not allow directory list. Hence, no way to tell if a file
-falls in one url but not another.
 
 In an edge case, if github repo's public url is given for a moban project,
 this github repo shall not have sub repos. This library will fail to
