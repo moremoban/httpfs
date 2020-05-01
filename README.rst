@@ -7,12 +7,20 @@ httpfs
 
 .. image:: https://codecov.io/github/moremoban/httpfs/coverage.png
    :target: https://codecov.io/github/moremoban/httpfs
+.. image:: https://badge.fury.io/py/httpfs.svg
+   :target: https://pypi.org/project/httpfs
+
+.. image:: https://pepy.tech/badge/httpfs/month
+   :target: https://pepy.tech/project/httpfs/month
+
 .. image:: https://img.shields.io/github/stars/moremoban/httpfs.svg?style=social&maxAge=3600&label=Star
     :target: https://github.com/moremoban/httpfs/stargazers
 
 
 What can you do with it?
 ================================================================================
+
+With `Python File System 2`_, you can do:
 
 .. code::
 
@@ -26,7 +34,7 @@ Have fun!
 Why
 ================================================================================
 
-Its creation was to enable `moban`_ to use any files over http(s) as its
+It enables `moban`_ to use any files over http(s) as its
 template or data file:
 
 .. code-block:: bash
@@ -36,20 +44,22 @@ template or data file:
       -o _version.py
 
 
+.. _Python File System 2: https://docs.pyfilesystem.org/en/latest
 .. _moban: https://github.com/moremoban/moban
-
-Capability contraints
-================================================================================
-
-In an edge case, if github repo's public url is given for a moban project,
-this github repo shall not have sub repos. This library will fail to
-translate sub-repo as url.
 
 
 Installation
 ================================================================================
 
-You can get it:
+
+You can install httpfs via pip:
+
+.. code-block:: bash
+
+    $ pip install httpfs
+
+
+or clone it and install it:
 
 .. code-block:: bash
 

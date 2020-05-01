@@ -8,6 +8,8 @@
 What can you do with it?
 ================================================================================
 
+With `Python File System 2`_, you can do:
+
 .. code::
 
    >>> import fs
@@ -20,7 +22,7 @@ Have fun!
 Why
 ================================================================================
 
-Its creation was to enable `moban`_ to use any files over http(s) as its
+It enables `moban`_ to use any files over http(s) as its
 template or data file:
 
 .. code-block:: bash
@@ -30,13 +32,7 @@ template or data file:
       -o _version.py
 
 
+.. _Python File System 2: https://docs.pyfilesystem.org/en/latest
 .. _moban: https://github.com/moremoban/moban
-
-Capability contraints
-================================================================================
-
-In an edge case, if github repo's public url is given for a moban project,
-this github repo shall not have sub repos. This library will fail to
-translate sub-repo as url.
 
 {%endblock%}
