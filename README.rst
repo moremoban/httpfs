@@ -34,7 +34,7 @@ Have fun!
 Why
 ================================================================================
 
-It enables `moban`_ to use any files over http(s) as its
+With httpfs, `moban`_ can access any files over http(s) as its
 template or data file:
 
 .. code-block:: bash
@@ -44,8 +44,9 @@ template or data file:
       -o _version.py
 
 
-.. _Python File System 2: https://docs.pyfilesystem.org/en/latest
 .. _moban: https://github.com/moremoban/moban
+
+.. _Python File System 2: https://docs.pyfilesystem.org/en/latest
 
 
 Installation

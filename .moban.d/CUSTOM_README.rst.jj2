@@ -22,17 +22,8 @@ Have fun!
 Why
 ================================================================================
 
-It enables `moban`_ to use any files over http(s) as its
-template or data file:
-
-.. code-block:: bash
-
-    $ moban -t 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/templates/_version.py.jj2'\
-      -c 'https://raw.githubusercontent.com/moremoban/pypi-mobans/dev/config/data.yml'\
-      -o _version.py
-
+{% include "httpfs_example.rst.jj2" %}
 
 .. _Python File System 2: https://docs.pyfilesystem.org/en/latest
-.. _moban: https://github.com/moremoban/moban
 
 {%endblock%}
